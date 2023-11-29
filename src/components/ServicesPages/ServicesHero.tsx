@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 const ServicesHero = () => {
   return (
     <section>
-      <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+      <div className="">
         <div className="grid grid-cols-1 gap-12 sm:gap-20 lg:grid-cols-2">
           <div className="max-w-[620px] lg:max-w-[844px]">
             <h1 className="mb-4 text-4xl font-semibold md:text-6xl">
