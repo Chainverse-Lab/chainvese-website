@@ -13,7 +13,7 @@ const OurServiceSec = () => {
       <div className="flex justify-end">
         <Card className="lg:w-1/2">
           <CardHeader>
-            <CardTitle className="lg:text-right">Our Services</CardTitle>
+            <CardTitle className="lg:text-right gradient">Our Services</CardTitle>
           </CardHeader>
           <CardContent>
             <CardDescription className="flex flex-col lg:text-right gap-4">

@@ -19,8 +19,10 @@ const data = [
 
 const TechSlider = () => {
   return (
-    <section className="flex flex-col justify-center items-center px-4">
-      Our Tech Stack
+    <section className="flex flex-col justify-center items-center px-4 py-8">
+      <h1 className="text-3xl gradient text-center">
+        Front End Web Technologies we use
+      </h1>
       <div className="slider w-full max-w-6xl">
         <div className="containerSlide">
           {data.map((logo, index) => (

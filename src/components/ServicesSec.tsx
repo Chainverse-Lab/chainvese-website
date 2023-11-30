@@ -37,7 +37,7 @@ const ServicesSec = () => {
   ];
 
   return (
-    <section className="px-6 lg:px-12 py-20">
+    <section className="px-6 lg:px-12 py-20 flex justify-center items-center">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-2xl text-center font-bold gradient">
           ACROSS ANY STAGE
@@ -48,7 +48,7 @@ const ServicesSec = () => {
           designing interfaces, and architecting solutions - we&apos;ve got you
           covereds.
         </p>
-        <div className="my-12 w-full gap-4 flex flex-wrap justify-center items-center">
+        <div className="my-12 w-full gap-4 flex flex-wrap justify-center items-center max-w-7xl">
           {cardsData.map((card, index) => (
             <Card key={index} className="lg:w-1/4 lg:h-full h-[155px] p-2">
               <CardContent className="pt-2 flex justify-center items-center gap-4">

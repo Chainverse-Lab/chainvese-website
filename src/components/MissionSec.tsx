@@ -13,7 +13,7 @@ const MissionSec = () => {
       <div className="flex justify-start">
         <Card className="lg:w-1/2">
           <CardHeader>
-            <CardTitle>Our Mission</CardTitle>
+            <CardTitle className="gradient">Our Mission</CardTitle>
           </CardHeader>
           <CardContent>
             <CardDescription className="flex flex-col gap-4">

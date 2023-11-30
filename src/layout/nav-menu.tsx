@@ -13,6 +13,11 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
 
 export function NavMenu() {
   return (
@@ -22,30 +27,31 @@ export function NavMenu() {
           <NavigationMenuTrigger>Services</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
-              {/* <li className="row-span-4"> 
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      Blockchain As a Service
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Simplify and secure operations with our Blockchain as a
-                      Service.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li> */}
-              <ListItem href="/docs" title="NFT Development"></ListItem>
+              <ListItem>
+                <HoverCard>
+                  <HoverCardTrigger className="text-white cursor-pointer">
+                    Blockchain Development
+                  </HoverCardTrigger>
+                  <HoverCardContent>
+                    <ListItem href="/" title="Public Blockchain"></ListItem>
+                    <ListItem
+                      href="/front-end-development"
+                      title="Private Blockchain"
+                    ></ListItem>
+                    <ListItem
+                      href="/front-end-development"
+                      title="AMB (Amazon Managed Blockchain)"
+                    ></ListItem>
+                  </HoverCardContent>
+                </HoverCard>
+              </ListItem>
               <ListItem
                 href="/"
-                title="Blockchain Solutions"
+                title="Blockchain Solution Architecture"
               ></ListItem>
               <ListItem
                 href="/front-end-development"
-                title="Front-End Web Dev Solutions"
+                title="Front-End Development"
               ></ListItem>
             </ul>
           </NavigationMenuContent>
@@ -54,7 +60,7 @@ export function NavMenu() {
           <NavigationMenuTrigger>BaaS</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/docs" title="Case Studies">
+              <ListItem href="/" title="Case Studies">
                 Explore our blockchain success stories.
               </ListItem>
               <ListItem href="/" title="Healthcare">
@@ -76,47 +82,21 @@ export function NavMenu() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>ReadyMade</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-3">
-              {/* <li className="row-span-4"> 
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      Blockchain As a Service
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Simplify and secure operations with our Blockchain as a
-                      Service.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li> */}
-              <ListItem
-                href="/docs"
-                title="Development Templates(MVPs)"
-              ></ListItem>
-              <ListItem
-                href="/"
-                title="Customizable"
-              ></ListItem>
-              <ListItem
-                href="/docs/primitives/typography"
-                title="RealEstate"
-              ></ListItem>
+            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
+              <ListItem href="/" title="Development Templates(MVPs)"></ListItem>
+              <ListItem href="/" title="Customizable"></ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               About Us
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Get In Touch
             </NavigationMenuLink>

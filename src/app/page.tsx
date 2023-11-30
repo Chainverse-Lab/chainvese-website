@@ -6,7 +6,6 @@ import MilestoneSec from "@/components/MilestoneSec";
 import MissionSec from "@/components/MissionSec";
 import OurServiceSec from "@/components/OurServiceSec";
 import ServicesSec from "@/components/ServicesSec";
-import TechSlider from "@/components/TechSlider";
 import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
