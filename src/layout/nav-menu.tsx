@@ -46,7 +46,7 @@ export function NavMenu() {
                 </HoverCard>
               </ListItem>
               <ListItem
-                href="/"
+                href="/blockchain-solution-architecture"
                 title="Blockchain Solution Architecture"
               ></ListItem>
               <ListItem
@@ -89,14 +89,14 @@ export function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="/aboutus" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               About Us
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Get In Touch
             </NavigationMenuLink>

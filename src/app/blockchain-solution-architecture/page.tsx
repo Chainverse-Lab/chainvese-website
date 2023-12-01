@@ -9,9 +9,9 @@ const page = () => {
       <ServicesHero
         heading="Transforming Ideas into Digital Marvels – That’s"
         para="Your digital presence deserves to be more than just stunning – it
-              should be captivating, immersive, and unforgettable. At
-              ChainVerse, we specialize in weaving digital magic through our
-              bespoke Frontend Web Development Services."
+            should be captivating, immersive, and unforgettable. At
+            ChainVerse, we specialize in weaving digital magic through our
+            bespoke Frontend Web Development Services."
         imgSrc="/hero-web.png"
       />
       <WhyUs />
