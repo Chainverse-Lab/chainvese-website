@@ -21,7 +21,7 @@ export function MobileDropdownMenu({ data, title, OnClick }: Props) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <h2 className="text-5xl font-semibold text-white">{title}</h2>
+        <h2 className="text-5xl font-semibold text-black dark:text-white">{title}</h2>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56 bg-black border-none shadow-none text-center">
         <DropdownMenuGroup className="text-center flex flex-col justify-center items-center">

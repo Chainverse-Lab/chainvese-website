@@ -41,7 +41,7 @@ export default function MobileMenu() {
                 y: 5,
               },
             }}
-            className="w-6 bg-white h-px block"
+            className="w-6 bg-black dark:bg-white h-px block"
           ></motion.span>
           <motion.span
             variants={{
@@ -52,7 +52,7 @@ export default function MobileMenu() {
                 opacity: 0,
               },
             }}
-            className="w-6 bg-white h-px block"
+            className="w-6 bg-black dark:bg-white h-px block"
           ></motion.span>
           <motion.span
             variants={{
@@ -64,7 +64,7 @@ export default function MobileMenu() {
                 y: -5,
               },
             }}
-            className="w-6 bg-white h-px block"
+            className="w-6 bg-black dark:bg-white h-px block"
           ></motion.span>
         </motion.button>
         <AnimatePresence>
@@ -100,7 +100,7 @@ export default function MobileMenu() {
                 initial="hide"
                 animate="show"
                 exit="hide"
-                className="fixed inset-0 bg-black p-6 flex flex-col justify-center space-y-10 lg:hidden"
+                className="fixed inset-0 bg-white text-black dark:text-white dark:bg-black p-6 flex flex-col justify-center space-y-10 lg:hidden"
               >
                 <motion.ul
                   variants={{
@@ -116,7 +116,7 @@ export default function MobileMenu() {
                   className="list-none space-y-6"
                 >
                   <li>
-                    <p className="text-5xl font-semibold text-white">
+                    <p className="text-5xl font-semibold text-black dark:text-white">
                       <MobileDropdownMenu
                         data={Data}
                         title="Services"
@@ -125,7 +125,7 @@ export default function MobileMenu() {
                     </p>
                   </li>
                   <li>
-                    <p className="text-5xl font-semibold text-white">
+                    <p className="text-5xl font-semibold">
                       <MobileDropdownMenu
                         data={Data1}
                         title="Baas"
@@ -134,7 +134,7 @@ export default function MobileMenu() {
                     </p>
                   </li>
                   <li>
-                    <p className="text-5xl font-semibold text-white">
+                    <p className="text-5xl font-semibold">
                       <MobileDropdownMenu
                         data={Data2}
                         title="ReadyMade"
@@ -146,7 +146,7 @@ export default function MobileMenu() {
                     <a
                       href="/aboutus"
                       onClick={Close}
-                      className="text-5xl font-semibold text-white"
+                      className="text-5xl font-semibold text-black dark:text-white"
                     >
                       About Us
                     </a>
@@ -155,7 +155,7 @@ export default function MobileMenu() {
                     <a
                       href="/contact"
                       onClick={Close}
-                      className="text-5xl font-semibold text-white"
+                      className="text-5xl font-semibold text-black dark:text-white"
                     >
                       Get In Touch
                     </a>
@@ -189,7 +189,7 @@ export default function MobileMenu() {
                 >
                   {socialMediaData.map((icon, index) => (
                     <li key={index}>
-                      <div className="bg-white rounded-lg w-8 h-8 text-black flex justify-center items-center">
+                      <div className="bg-black dark:bg-white rounded-lg w-8 h-8 dark:text-black text-white flex justify-center items-center">
                         {icon.icon}
                       </div>
                     </li>
