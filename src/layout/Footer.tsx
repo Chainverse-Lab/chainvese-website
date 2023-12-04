@@ -3,13 +3,11 @@ import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
 
 const socialMediaData = [
   { id: 1, icon: <FaFacebookF />, link: "https://www.facebook.com/" },
   { id: 2, icon: <FaLinkedinIn />, link: "https://www.linkedin.com/" },
   { id: 3, icon: <FaXTwitter />, link: "https://twitter.com/" },
-  { id: 4, icon: <FaInstagram />, link: "https://www.instagram.com/" },
 ];
 
 const navigationLinks = [
