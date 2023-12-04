@@ -14,25 +14,25 @@ const ServicesSec = () => {
       title: "UI/UX",
       imageSrc: "/icons/ui.png",
       description:
-        "Constructing beautiful interfaces and intuitive experience for your users.",
+        "Collaborate with our Web3 specialists to brainstorm and develop your product ideas.",
     },
     {
       title: "CONSULTING",
       imageSrc: "/icons/consulting.png",
       description:
-        "Engage our experts for advice on decentralised technology,Web3 products and blockchain.",
+        "Collaborate with our Web3 specialists to brainstorm and develop your product ideas.",
     },
     {
       title: "ARCHITECTURE",
       imageSrc: "/icons/arch.png",
       description:
-        "Designing optimal and innovative system structures to underpin your product",
+        "Collaborate with our Web3 specialists to brainstorm and develop your product ideas.",
     },
     {
       title: "DEVELOPMENT",
       imageSrc: "/icons/dev.png",
       description:
-        "Constructing beautiful interfaces and intuitive experience for your users",
+        "Collaborate with our Web3 specialists to brainstorm and develop your product ideas.",
     },
   ];
 
@@ -48,9 +48,9 @@ const ServicesSec = () => {
           designing interfaces, and architecting solutions - we&apos;ve got you
           covereds.
         </p>
-        <div className="my-12 w-full gap-4 flex flex-wrap justify-center items-center max-w-7xl">
+        <div className="my-12 w-full gap-4 flex flex-wrap justify-center items-center lg:max-w-7xl">
           {cardsData.map((card, index) => (
-            <Card key={index} className="lg:w-1/4 lg:h-full h-[155px] p-2">
+            <Card key={index} className="xl:w-1/4 md:w-full">
               <CardContent className="pt-2 flex justify-center items-center gap-4">
                 <Image
                   src={card.imageSrc}
