@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/layout/Footer";
 import { SiteHeader } from "@/layout/Header";
+import { Toaster } from "@/components/ui/toaster"
 
 const russoOne = Russo_One(
   { 
@@ -28,6 +29,7 @@ export default function RootLayout({
           <div className="relative flex min-h-screen flex-col">
             <SiteHeader />
             <div className="flex-1">{children}</div>
+            <Toaster />
             <Footer/>
           </div>
         </ThemeProvider>
