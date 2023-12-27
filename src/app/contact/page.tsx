@@ -8,7 +8,7 @@ const page = () => {
     <main className="py-10 px-6 lg:px-12 flex justify-center items-center">
       <section className="grid lg:grid-cols-2 gap-10">
         <ContactForm />
-        <div className="">
+        {/* <div className="">
           <div className="space-y-5">
             {cardsData.map((card, index) => (
               <Card key={index} className="lg:w-[60%]">
@@ -30,7 +30,7 @@ const page = () => {
               </Card>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
     </main>
   );
@@ -46,12 +46,12 @@ const cardsData = [
   },
   {
     title: "Phone",
-    imageSrc: "/icons/location.png",
+    imageSrc: "/icons/phone.png",
     description: "+9223164680556,021865486665",
   },
   {
     title: "Address",
-    imageSrc: "/icons/phone.png",
+    imageSrc: "/icons/location.png",
     description: "Karachi,Pakistan,London,UK",
   },
 ];

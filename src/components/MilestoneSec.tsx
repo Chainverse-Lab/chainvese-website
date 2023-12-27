@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "./ui/card";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const data = [
   {
@@ -115,13 +116,13 @@ const MilestoneSec = () => {
                     {item.deliveryTime}
                   </p>
                 </div>
-                <div className="mt-6 flex justify-center">
+                <Link href="/contact" className="mt-6 flex justify-center">
                   <Button
                     className={`font-normal text-white text-xs ${item.btnColor} hover:${item.btnColor} hover:bg-opacity-70`}
                   >
                     Enquire For {item.title}
                   </Button>
-                </div>
+                </Link>
               </CardContent>
             </Card>
           ))}
