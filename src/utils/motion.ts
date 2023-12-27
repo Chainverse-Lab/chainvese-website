@@ -99,3 +99,11 @@ export const staggerContainer = (
     },
   };
 };
+
+
+
+
+  export const textBlurIn = {
+    hidden: { filter: "blur(10px)", opacity: 0 },
+    visible: { filter: "blur(0px)", opacity: 1 },
+  }

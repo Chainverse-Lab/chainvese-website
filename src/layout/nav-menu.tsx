@@ -29,7 +29,7 @@ export function NavMenu() {
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
               <ListItem>
                 <HoverCard>
-                  <HoverCardTrigger className="text-white cursor-pointer">
+                  <HoverCardTrigger className="text-black dark:text-white cursor-pointer">
                     Blockchain Development
                   </HoverCardTrigger>
                   <HoverCardContent>

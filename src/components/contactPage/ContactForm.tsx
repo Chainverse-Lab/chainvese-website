@@ -55,9 +55,9 @@ const ContactForm = () => {
   function onSubmit(values: z.infer<typeof formSchema>, e: any) {
     e.preventDefault();
     setIsSubmitting(true);
-    const serviceId = "service_9tk6h0f";
-    const templateId = "template_raswkg8";
-    const publicKey = "UnjicIgZpY_MISid7";
+    const serviceId = "service_7qqubp8";
+    const templateId = "template_xvndtak";
+    const publicKey = "MbYCemqgbmeXFfwpV";
 
     const templateParams = {
       from_name: values.name,
@@ -70,7 +70,6 @@ const ContactForm = () => {
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
-        // console.log("Email sent successfully!", response);
         toast({
           description: "Your message has been sent.",
         });
@@ -78,15 +77,12 @@ const ContactForm = () => {
         setIsSubmitting(false);
       })
       .catch((error) => {
-        // console.error("Error sending email:", error);
         toast({
           title: "Uh oh! Something went wrong.",
           description: "There was a problem with your request.",
         });
         setIsSubmitting(false);
       });
-
-    // console.log(values);
   }
   return (
     <div className="">

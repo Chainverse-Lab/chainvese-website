@@ -8,7 +8,7 @@ export function MainNav() {
     <div className="flex gap-6 md:gap-10 ">
       <Link href="/" className="flex items-center space-x-2">
         <span className="inline-block text-xl lg:text-4xl font-bold">
-          ChainVerse
+          Chainverse
         </span>
       </Link>
       <div className="md:hidden hidden lg:block">

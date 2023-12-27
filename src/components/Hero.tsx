@@ -2,7 +2,7 @@
 import React from "react";
 import { EarthCanvas } from "./canvas";
 import { motion } from "framer-motion";
-import { slideIn } from "@/utils/motion";
+import { slideIn, textBlurIn } from "@/utils/motion";
 
 const Hero = () => {
   return (
@@ -21,9 +21,15 @@ const Hero = () => {
             <h1 className="mb-4 text-4xl uppercase font-extrabold tracking-wide text-center lg:text-start leading-none md:text-5xl xl:text-9xl dark:text-white">
               Web 3.0
             </h1>
-            <h1 className="mb-4 text-3xl uppercase font-extrabold tracking-widest text-center lg:text-start leading-none md:text-5xl  xl:text-7xl text-black hero_heading">
+            <motion.h1
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 1 }}
+              variants={textBlurIn}
+              className="mb-4 text-3xl uppercase font-extrabold tracking-widest text-center lg:text-start leading-none md:text-5xl  xl:text-7xl text-black hero_heading"
+            >
               Development.
-            </h1>
+            </motion.h1>
 
             {/* <p className="text-lg lg:text-2xl flex lg:justify-start justify-center  font-bold dark:text-white text-center text-black">
               Agency

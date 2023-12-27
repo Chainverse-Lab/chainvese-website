@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Card,
@@ -6,11 +7,22 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
+import { motion } from "framer-motion";
+import { slideIn, staggerContainer } from "@/utils/motion";
 
 const MissionSec = () => {
   return (
-    <section className="px-6 lg:px-12">
-      <div className="flex justify-start">
+    <motion.section
+      className="px-6 lg:px-12"
+      variants={staggerContainer(0, 0)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+    >
+      <motion.div
+        variants={slideIn("left", "tween", 0.2, 1)}
+        className="flex justify-start"
+      >
         <Card className="lg:w-1/2">
           <CardHeader>
             <CardTitle className="gradient">Our Mission</CardTitle>
@@ -26,8 +38,8 @@ const MissionSec = () => {
             </CardDescription>
           </CardContent>
         </Card>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

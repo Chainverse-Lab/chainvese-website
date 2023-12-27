@@ -17,7 +17,7 @@ export default function Home() {
       <OurServiceSec />
       <DeliverySec />
       <MilestoneSec />
-      <ServicesSec/>
+      <ServicesSec />
       <Testimonials />
       <CTA />
     </main>

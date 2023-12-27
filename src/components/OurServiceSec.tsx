@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Card,
@@ -6,14 +7,27 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
+import { motion } from "framer-motion";
+import { slideIn, staggerContainer } from "@/utils/motion";
 
 const OurServiceSec = () => {
   return (
-    <section className="px-6 lg:px-12">
-      <div className="flex justify-end">
+    <motion.section
+      variants={staggerContainer(0, 0)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="px-6 lg:px-12"
+    >
+      <motion.div
+        variants={slideIn("left", "tween", 0.2, 1)}
+        className="flex justify-end"
+      >
         <Card className="lg:w-1/2">
           <CardHeader>
-            <CardTitle className="lg:text-right gradient">Our Services</CardTitle>
+            <CardTitle className="lg:text-right gradient">
+              Our Services
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <CardDescription className="flex flex-col lg:text-right gap-4">
@@ -26,8 +40,8 @@ const OurServiceSec = () => {
             </CardDescription>
           </CardContent>
         </Card>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 
