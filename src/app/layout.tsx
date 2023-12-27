@@ -4,13 +4,12 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/layout/Footer";
 import { SiteHeader } from "@/layout/Header";
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from "@/components/ui/toaster";
 import ScrollToTop from "@/layout/ScrollToTop";
 
-const russoOne = Russo_One(
-  { 
-    subsets: ["latin"] ,
-    weight:["400"]
+const russoOne = Russo_One({
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -31,8 +30,8 @@ export default function RootLayout({
             <SiteHeader />
             <div className="flex-1">{children}</div>
             <Toaster />
-            <Footer/>
-            <ScrollToTop/>
+            <Footer />
+            <ScrollToTop />
           </div>
         </ThemeProvider>
       </body>

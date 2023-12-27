@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
+import Image from "next/image";
 
 type Props = {
   heading: string;
@@ -26,10 +27,12 @@ const ServicesHero = ({ heading, para, imgSrc }: Props) => {
           </div>
         </div>
         <div className="relative left-4 h-full max-h-[500px] w-[85%] lg:left-0 lg:w-full">
-          <img
-            src={imgSrc} //
+          <Image
+            src={imgSrc}
             alt="Hero"
             className="relative h-full w-full max-w-[800px]  rounded-2xl object-cover"
+            width={800}
+            height={800}
           />
         </div>
       </div>
