@@ -129,3 +129,22 @@ export const FooterLinks = [
   { id: 3, text: "Why us", href: "/why-us" },
   { id: 4, text: "Contact", href: "/contact" },
 ];
+
+export const clientsLogos = [
+  {
+    src: "/clientsLogos/microsoft.svg",
+    alt: "logo ",
+  },
+  {
+    src: "/clientsLogos/microsoft.svg",
+    alt: "logo ",
+  },
+  {
+    src: "/clientsLogos/microsoft.svg",
+    alt: "logo ",
+  },
+  {
+    src: "/clientsLogos/microsoft.svg",
+    alt: "logo ",
+  },
+];

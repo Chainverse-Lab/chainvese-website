@@ -1,3 +1,6 @@
+import { clientsLogos } from "@/constants/config-data";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const LogoCloud = () => {
@@ -13,54 +16,21 @@ const LogoCloud = () => {
           </div>
           <div className="m-auto mt-16 md:w-11/12 lg:w-8/12 xl:w-7/12">
             <div className="flex flex-wrap justify-center gap-6">
-              <div className="group rounded-xl border  bg-opacity-5 py-2 px-4 hover:bg-opacity-10">
-                <img
-                  src="https://tailus.io/sources/blocks/sponsors/preview/images/clients/microsoft.svg"
-                  className="contrast-0 transition group-hover:contrast-100"
-                  loading="lazy"
-                  alt="logo airbnb"
-                />
-              </div>
-              <div className="group rounded-xl border  bg-opacity-5 py-2 px-4 hover:bg-opacity-10">
-                <img
-                  src="https://tailus.io/sources/blocks/sponsors/preview/images/clients/microsoft.svg"
-                  className="contrast-0 transition group-hover:contrast-100"
-                  loading="lazy"
-                  alt="logo microsoft"
-                />
-              </div>
-              <div className="group rounded-xl border  bg-opacity-5 py-2 px-4 hover:bg-opacity-10">
-                <img
-                  src="https://tailus.io/sources/blocks/sponsors/preview/images/clients/microsoft.svg"
-                  className="contrast-0 transition group-hover:contrast-100"
-                  loading="lazy"
-                  alt="logo ge"
-                />
-              </div>
-              <div className="group rounded-xl border  bg-opacity-5 py-2 px-4 hover:bg-opacity-10">
-                <img
-                  src="https://tailus.io/sources/blocks/sponsors/preview/images/clients/microsoft.svg"
-                  className="contrast-0 transition group-hover:contrast-100"
-                  loading="lazy"
-                  alt="logo bissell"
-                />
-              </div>
-              <div className="group rounded-xl border bg-opacity-5 py-2 px-4 hover:bg-opacity-10">
-                <img
-                  src="https://tailus.io/sources/blocks/sponsors/preview/images/clients/microsoft.svg"
-                  className="contrast-0 transition group-hover:contrast-100"
-                  loading="lazy"
-                  alt="logo bissell"
-                />
-              </div>
-              <div className="group rounded-xl border  bg-opacity-5 py-2 px-4 hover:bg-opacity-10">
-                <img
-                  src="https://tailus.io/sources/blocks/sponsors/preview/images/clients/microsoft.svg"
-                  className="contrast-0 transition group-hover:contrast-100"
-                  loading="lazy"
-                  alt="logo automatic"
-                />
-              </div>
+              {clientsLogos.map((logo, index) => (
+                <Link
+                  href={""}
+                  key={index}
+                  className="group rounded-xl border bg-opacity-5 py-2 px-4 hover:bg-opacity-10"
+                >
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    className="contrast-0 transition group-hover:contrast-100 w-36 h-10"
+                    width={1000}
+                    height={1000}
+                  />
+                </Link>
+              ))}
             </div>
           </div>
         </div>
