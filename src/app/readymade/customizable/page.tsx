@@ -1,5 +1,4 @@
 import ServicesHero from "@/components/ServicesPages/ServicesHero";
-import WhyUs from "@/components/ServicesPages/WhyUs";
 import TechSlider from "@/components/TechSlider";
 import React from "react";
 

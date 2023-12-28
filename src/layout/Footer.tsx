@@ -1,3 +1,4 @@
+import { FooterLinks } from "@/constants/config-data";
 import Link from "next/link";
 import React from "react";
 import { FaFacebookF } from "react-icons/fa";
@@ -8,13 +9,6 @@ const socialMediaData = [
   { id: 1, icon: <FaFacebookF />, link: "https://www.facebook.com/" },
   { id: 2, icon: <FaLinkedinIn />, link: "https://www.linkedin.com/" },
   { id: 3, icon: <FaXTwitter />, link: "https://twitter.com/" },
-];
-
-const navigationLinks = [
-  { id: 1, text: "About", href: "/about" },
-  { id: 2, text: "Services", href: "/services" },
-  { id: 3, text: "Why us", href: "/why-us" },
-  { id: 4, text: "Contact", href: "/contact" },
 ];
 
 const Footer = () => {
@@ -30,7 +24,7 @@ const Footer = () => {
               </span>
             </Link>
             <div className="flex flex-col lg:flex-row lg:space-x-8 justify-between items-center">
-              {navigationLinks.map((link) => (
+              {FooterLinks.map((link) => (
                 <Link
                   key={link.id}
                   href={link.href}

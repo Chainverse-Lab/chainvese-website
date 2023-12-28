@@ -1,64 +1,9 @@
 "use client";
 import Slider from "react-slick";
-
 import "@/styles/slick.css";
 import "@/styles/slick-theme.css";
 import React, { Component } from "react";
-import Image from "next/image";
-
-// CAROUSEL DATA
-
-type DataType = {
-  profession: string;
-  comment: string;
-  imgSrc: string;
-  name: string;
-};
-
-const postData: DataType[] = [
-  {
-    name: "Robert Fox",
-    profession: "CEO, Parkview Int.Ltd",
-    comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/testimonial/user.svg",
-  },
-  {
-    name: "Leslie Alexander",
-    profession: "CEO, Parkview Int.Ltd",
-    comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/mentor/user2.png",
-  },
-  {
-    name: "Cody Fisher",
-    profession: "CEO, Parkview Int.Ltd",
-    comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/mentor/user3.png",
-  },
-  {
-    name: "Robert Fox",
-    profession: "CEO, Parkview Int.Ltd",
-    comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/mentor/user1.png",
-  },
-  {
-    name: "Leslie Alexander",
-    profession: "CEO, Parkview Int.Ltd",
-    comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/mentor/user2.png",
-  },
-  {
-    name: "Cody Fisher",
-    profession: "CEO, Parkview Int.Ltd",
-    comment:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
-    imgSrc: "/assets/mentor/user3.png",
-  },
-];
+import { postData } from "@/constants/config-data";
 
 export default class Testimonials extends Component {
   render() {

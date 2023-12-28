@@ -1,5 +1,9 @@
-import { Linkedin, TwitchIcon } from "lucide-react";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
+import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -46,23 +50,31 @@ const page = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 gap-4 gap-y-6 py-12 pb-20 md:grid-cols-2 lg:grid-cols-4">
-        {users.map((user) => (
-          <div className="rounded-md border" key={user.name}>
-            <img
-              src={user.image}
-              alt={user.name}
-              className="h-[300px] w-full rounded-t-md object-cover "
+        {OurTeam.map((member, idx) => (
+          <div className="rounded-md border" key={idx}>
+            <Image
+              src={member.image}
+              alt={member.name}
+              className="h-[300px] w-full rounded-t-md object-cover"
+              width={1000}
+              height={1000}
             />
-            <p className="mt-6 w-full px-2 text-xl  font-semibold ">
-              {user.name}
+            <p className="mt-6 w-full px-2 text-xl font-semibold">
+              {member.name}{" "}
             </p>
-            <p className="w-full px-2 pb-6 text-sm font-semibold text-gray-400">
-              {user.position}
+            <p className="w-full px-2 pb-6 text-sm font-semibold text-gray-400 flex justify-between items-center ">
+              {member.position}
+              <span className="flex justify-center items-center gap-2 text-lg">
+                <Link href={""} className="hover:text-white">
+                  <FaLinkedinIn />
+                </Link>
+                <Link href={""} className="hover:text-white">
+                  <FaXTwitter />
+                </Link>
+              </span>
             </p>
           </div>
         ))}
-        {/* <Linkedin/>
-      <TwitchIcon/> */}
       </div>
     </main>
   );
@@ -70,29 +82,25 @@ const page = () => {
 
 export default page;
 
-const users = [
+const OurTeam = [
   {
     name: "Gabrielle Fernandez",
-    image:
-      "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=600&w=600&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
+    image: "/teamPics/pfp1.jpeg",
     position: "Marketing Lead",
   },
   {
     name: "Victória Silva",
-    image:
-      "https://images.generated.photos/vBRCiI_3UM4l40sU8s7fCwbJwzDwRTGpebzPkfHFsY4/rs:fit:512:512/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODgyMTAyLmpwZw.jpg",
+    image: "/teamPics/pfp1.jpeg",
     position: "Back-end developer",
   },
   {
     name: "Gabrielle Fernandez",
-    image:
-      "https://images.unsplash.com/photo-1549351512-c5e12b11e283?q=80&fm=jpg&crop=faces&fit=crop&h=600&w=600",
+    image: "/teamPics/pfp1.jpeg",
     position: "Sales",
   },
   {
     name: "Sadie Lewis",
-    image:
-      "https://images.unsplash.com/photo-1485960994840-902a67e187c8?q=80&fm=jpg&crop=faces&fit=crop&h=600&w=600",
+    image: "/teamPics/pfp1.jpeg",
     position: "Sales",
   },
 ];

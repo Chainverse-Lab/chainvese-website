@@ -1,5 +1,5 @@
 import ServicesHero from "@/components/ServicesPages/ServicesHero";
-import WhyUs from "@/components/ServicesPages/WhyUs";
+import { WhyUsWeb } from "@/components/ServicesPages/WhyUs";
 import TechSlider from "@/components/TechSlider";
 import React from "react";
 
@@ -14,7 +14,7 @@ const page = () => {
               bespoke Frontend Web Development Services."
         imgSrc="/hero-web.png"
       />
-      <WhyUs />
+      <WhyUsWeb />
       <TechSlider />
     </main>
   );
