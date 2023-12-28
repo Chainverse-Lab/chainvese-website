@@ -10,7 +10,7 @@ type Props = {
 
 const ServicesHero = ({ heading, para, imgSrc }: Props) => {
   return (
-    <section>
+    <section className="py-8">
       <div className="grid grid-cols-1 gap-12 sm:gap-20 lg:grid-cols-2">
         <div className="max-w-[620px] lg:max-w-[844px]">
           <h1 className="mb-4 text-4xl font-semibold md:text-6xl">
@@ -19,7 +19,7 @@ const ServicesHero = ({ heading, para, imgSrc }: Props) => {
             <span className="hero_heading text-black px-1">Our Expertise!</span>
           </h1>
           <div className="mb-6 max-w-[528px] md:mb-10 lg:mb-12">
-            <p className="text-sm text-[#636262]">{para}</p>
+            <p className="text-base md:text-xl ">{para}</p>
           </div>
 
           <div className="flex gap-6">

@@ -46,11 +46,11 @@ export function NavMenu() {
                 </HoverCard>
               </ListItem>
               <ListItem
-                href="/blockchain-solution-architecture"
+                href="/services/blockchain-solution-architecture"
                 title="Blockchain Solution Architecture"
               ></ListItem>
               <ListItem
-                href="/front-end-development"
+                href="/services/front-end-development"
                 title="Front-End Development"
               ></ListItem>
             </ul>
@@ -83,8 +83,14 @@ export function NavMenu() {
           <NavigationMenuTrigger>ReadyMade</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
-              <ListItem href="/" title="Development Templates(MVPs)"></ListItem>
-              <ListItem href="/" title="Customizable"></ListItem>
+              <ListItem
+                href="/readymade/mvp"
+                title="Development Templates(MVPs)"
+              ></ListItem>
+              <ListItem
+                href="/readymade/customizable"
+                title="Customizable"
+              ></ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
