@@ -208,7 +208,10 @@ const Data = [
   {
     subLinks: [
       { href: "/", label: "Blockchain Development" },
-      { href: "/", label: "Blockchain Solution Architecture" },
+      {
+        href: "/services/blockchain-solution-architecture",
+        label: "Blockchain Solution Architecture",
+      },
       { href: "/front-end-development", label: "Front-End Development" },
     ],
   },
@@ -228,8 +231,8 @@ const Data1 = [
 const Data2 = [
   {
     subLinks: [
-      { href: "/", label: "Development Templates (MVPs)" },
-      { href: "/", label: "Customizable" },
+      { href: "/readymade/mvp", label: "Development Templates (MVPs)" },
+      { href: "/readymade/customizable", label: "Customizable" },
     ],
   },
 ];
