@@ -60,14 +60,14 @@ export function NavMenu() {
           <NavigationMenuTrigger>BaaS</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 lg:w-[400px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/" title="Case Studies"></ListItem>
-              <ListItem href="/" title="Healthcare"></ListItem>
               <ListItem
-                href="/docs/primitives/typography"
-                title="RealEstate"
+                href="/baas/case-studies"
+                title="Case Studies"
               ></ListItem>
+              <ListItem href="/baas/health-care" title="Healthcare"></ListItem>
+              <ListItem href="/baas/real-estate" title="RealEstate"></ListItem>
               <ListItem
-                href="/docs/primitives/typography"
+                href="/baas/ecommerce"
                 title="E-Commerce
 "
               ></ListItem>

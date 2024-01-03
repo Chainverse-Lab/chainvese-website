@@ -220,10 +220,10 @@ const Data = [
 const Data1 = [
   {
     subLinks: [
-      { href: "/", label: "Case Studies" },
-      { href: "/", label: "HealthCare" },
-      { href: "/", label: "RealState" },
-      { href: "/", label: "E-Commerce" },
+      { href: "/baas/case-studies", label: "Case Studies" },
+      { href: "/baas/health-care", label: "HealthCare" },
+      { href: "/baas/real-estate", label: "RealState" },
+      { href: "/baas/ecommerce", label: "E-Commerce" },
     ],
   },
 ];
