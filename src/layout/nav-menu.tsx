@@ -29,7 +29,7 @@ export function NavMenu() {
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
               <ListItem>
                 <HoverCard>
-                  <HoverCardTrigger className="text-black dark:text-white cursor-pointer">
+                  <HoverCardTrigger className="text-black dark:text-white cursor-pointer ">
                     Blockchain Development
                   </HoverCardTrigger>
                   <HoverCardContent>
@@ -47,7 +47,7 @@ export function NavMenu() {
               </ListItem>
               <ListItem
                 href="/services/blockchain-solution-architecture"
-                title="Blockchain Solution Architecture"
+                title="Blockchain Architecture"
               ></ListItem>
               <ListItem
                 href="/services/front-end-development"
@@ -59,23 +59,18 @@ export function NavMenu() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>BaaS</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/" title="Case Studies">
-                Explore our blockchain success stories.
-              </ListItem>
-              <ListItem href="/" title="Healthcare">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="RealEstate">
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
+            <ul className="grid gap-3 p-4 lg:w-[400px] lg:grid-cols-[.75fr_1fr]">
+              <ListItem href="/" title="Case Studies"></ListItem>
+              <ListItem href="/" title="Healthcare"></ListItem>
+              <ListItem
+                href="/docs/primitives/typography"
+                title="RealEstate"
+              ></ListItem>
               <ListItem
                 href="/docs/primitives/typography"
                 title="E-Commerce
 "
-              >
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
+              ></ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -85,7 +80,7 @@ export function NavMenu() {
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
               <ListItem
                 href="/readymade/mvp"
-                title="Development Templates(MVPs)"
+                title="Dev Templates(MVPs)"
               ></ListItem>
               <ListItem
                 href="/readymade/customizable"
