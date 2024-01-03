@@ -77,6 +77,84 @@ export const bcSolServices = [
     shadow: "shadow-indigo-600/10",
   },
 ];
+export const bcDevPublic = [
+  {
+    id: 1,
+    num: "01",
+    title: "Inclusivity",
+    color: "bg-blue-700",
+    shadow: "shadow-blue-700/10",
+  },
+  {
+    id: 2,
+    num: "02",
+    title: "Global Reach",
+    color: "bg-purple-600",
+    shadow: "shadow-purple-600/10",
+  },
+  {
+    id: 3,
+    num: "03",
+    title: "Community-Driven",
+    color: "bg-orange-600",
+    shadow: "shadow-orange-600/10",
+  },
+];
+
+export const bcDevPrivate = [
+  {
+    id: 1,
+    num: "01",
+    title: "Enterprise-Grade Security",
+    color: "bg-blue-700",
+    shadow: "shadow-blue-700/10",
+  },
+  {
+    id: 2,
+    num: "02",
+    title: "Compliance",
+    color: "bg-purple-600",
+    shadow: "shadow-purple-600/10",
+  },
+  {
+    id: 3,
+    num: "03",
+    title: "Tailored Solutions",
+    color: "bg-orange-600",
+    shadow: "shadow-orange-600/10",
+  },
+];
+
+export const bcDevAMB = [
+  {
+    id: 1,
+    num: "01",
+    title: "AWS Expertise",
+    color: "bg-blue-700",
+    shadow: "shadow-blue-700/10",
+  },
+  {
+    id: 2,
+    num: "02",
+    title: "Blockchain Prowess",
+    color: "bg-purple-600",
+    shadow: "shadow-purple-600/10",
+  },
+  {
+    id: 3,
+    num: "03",
+    title: "Tailored Solutions",
+    color: "bg-orange-600",
+    shadow: "shadow-orange-600/10",
+  },
+  {
+    id: 4,
+    num: "04",
+    title: "Global Impact",
+    color: "bg-pink-600",
+    shadow: "shadow-pink-600/10",
+  },
+];
 
 export const postData: DataType[] = [
   {

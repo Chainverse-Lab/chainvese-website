@@ -33,13 +33,16 @@ export function NavMenu() {
                     Blockchain Development
                   </HoverCardTrigger>
                   <HoverCardContent>
-                    <ListItem href="/" title="Public Blockchain"></ListItem>
                     <ListItem
-                      href="/front-end-development"
+                      href="/services/blockchain-development/public-blockchain"
+                      title="Public Blockchain"
+                    ></ListItem>
+                    <ListItem
+                      href="/services/blockchain-development/private-blockchain"
                       title="Private Blockchain"
                     ></ListItem>
                     <ListItem
-                      href="/front-end-development"
+                      href="/services/blockchain-development/amb-blockchain"
                       title="AMB (Amazon Managed Blockchain)"
                     ></ListItem>
                   </HoverCardContent>
