@@ -1,9 +1,9 @@
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
+import { OurTeam } from "@/constants/config-data";
 
 const page = () => {
   return (
@@ -81,26 +81,3 @@ const page = () => {
 };
 
 export default page;
-
-const OurTeam = [
-  {
-    name: "Gabrielle Fernandez",
-    image: "/teamPics/pfp1.jpeg",
-    position: "Marketing Lead",
-  },
-  {
-    name: "Victória Silva",
-    image: "/teamPics/pfp1.jpeg",
-    position: "Back-end developer",
-  },
-  {
-    name: "Gabrielle Fernandez",
-    image: "/teamPics/pfp1.jpeg",
-    position: "Sales",
-  },
-  {
-    name: "Sadie Lewis",
-    image: "/teamPics/pfp1.jpeg",
-    position: "Sales",
-  },
-];

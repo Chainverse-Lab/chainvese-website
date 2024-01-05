@@ -212,7 +212,7 @@ const Data = [
         href: "/services/blockchain-solution-architecture",
         label: "Blockchain Solution Architecture",
       },
-      { href: "/front-end-development", label: "Front-End Development" },
+      { href: "/services/front-end-development", label: "Front-End Development" },
     ],
   },
 ];

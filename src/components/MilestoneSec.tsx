@@ -1,6 +1,5 @@
 import React from "react";
 import { BsFillSquareFill } from "react-icons/bs";
-
 import {
   Card,
   CardContent,
@@ -10,60 +9,7 @@ import {
 } from "./ui/card";
 import { Button } from "./ui/button";
 import Link from "next/link";
-
-const data = [
-  {
-    title: "POC",
-    description:
-      "Demonstrate the feasibility or potential value of your idea or approach to validate it before committing significant resources to its development.",
-    list: [
-      "Suitable for early-stage and self-funded teams",
-      "Ultra low cost entry to validate product concept",
-      "Use as a tool to secure venture funding, or demonstrate product value to stakeholders",
-    ],
-    dotColor: "text-blue-700",
-    titleColor: "text-blue-700",
-    borderColor: "border-blue-700/10",
-    btnColor: "bg-blue-700",
-    shadowColor: "shadow-blue-500/10",
-    additionalInfo: "Proof Of Concept",
-    deliveryTime: "2-6 weeks",
-  },
-  {
-    title: "MVP",
-    description:
-      "A cost-effective way to validate market demand and gather feedback on your product or service, it's a great way to showcase your value proposition to target customers and improve chances of success",
-    list: [
-      "Suitable for teams with seed funding, ready to launch their first live product",
-      "Low cost strategy for quickly bringing a product to market",
-      "Establish a foundation for future feature iterations",
-    ],
-    dotColor: "text-purple-600",
-    titleColor: "text-purple-600",
-    borderColor: "border-purple-600/10",
-    btnColor: "bg-purple-600",
-    shadowColor: "shadow-purple-500/10",
-    additionalInfo: "Minimum Viable Product",
-    deliveryTime: "4-8 weeks",
-  },
-  {
-    title: "PRODUCTION",
-    description:
-      "The production version is the final, fully tested and functional version of the product that is released for live use at scale. It's undergone extensive testing and is supported by the developers for bugs and updates.",
-    list: [
-      "Suitable for teams with sufficient funding, ready to scale up",
-      "Deploy robust, industry-leading software",
-      "Required for existing production systems rolling out additional features",
-    ],
-    dotColor: "text-orange-600",
-    titleColor: "text-orange-600",
-    borderColor: "border-orange-600/10",
-    btnColor: "bg-orange-600",
-    shadowColor: "shadow-orange-500/10",
-    additionalInfo: "LIVE/RELEASE VERSION",
-    deliveryTime: "8-12 weeks",
-  },
-];
+import { MileStoneData } from "@/constants/config-data";
 
 const MilestoneSec = () => {
   return (
@@ -79,7 +25,7 @@ const MilestoneSec = () => {
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 my-12">
-          {data.map((item, index) => (
+          {MileStoneData.map((item, index) => (
             <Card
               key={index}
               className={`lg:w-[300px] md:w-[300px] w-[280px] border-2 border-gray-800 shadow-xl ${item.borderColor} ${item.shadowColor}`}

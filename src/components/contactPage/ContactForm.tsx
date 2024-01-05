@@ -30,6 +30,7 @@ import {
   SelectValue,
 } from "../ui/select";
 import { useState } from "react";
+import { ContactServicesData } from "@/constants/config-data";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -145,7 +146,7 @@ const ContactForm = () => {
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          {ServicesData.map((area, idx) => {
+                          {ContactServicesData.map((area, idx) => {
                             return (
                               <SelectItem value={area.value} key={idx}>
                                 {area.name}
@@ -188,11 +189,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-
-const ServicesData = [
-  { name: "Front-End Web Development", value: "frontenddev" },
-  { name: "BlockChain Development", value: "blockchaindev" },
-  { name: "BlockChain Solutin Architecture", value: "blockchainsol" },
-  { name: "BAAS", value: "baas" },
-  { name: "ReadyMade", value: "readymade" },
-];

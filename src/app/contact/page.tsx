@@ -1,5 +1,6 @@
 import ContactForm from "@/components/contactPage/ContactForm";
 import { Card, CardContent, CardDescription } from "@/components/ui/card";
+import { ContactCardsData } from "@/constants/config-data";
 import Image from "next/image";
 import React from "react";
 
@@ -10,7 +11,7 @@ const page = () => {
         <ContactForm />
         {/* <div className="">
           <div className="space-y-5">
-            {cardsData.map((card, index) => (
+            {ContactCardsData.map((card, index) => (
               <Card key={index} className="lg:w-[60%]">
                 <CardContent className="pt-2 flex items-center gap-4">
                   <Image
@@ -38,20 +39,3 @@ const page = () => {
 
 export default page;
 
-const cardsData = [
-  {
-    title: "Email",
-    imageSrc: "/icons/email.png",
-    description: "mohammedasif80902@gmail.com",
-  },
-  {
-    title: "Phone",
-    imageSrc: "/icons/phone.png",
-    description: "+9223164680556,021865486665",
-  },
-  {
-    title: "Address",
-    imageSrc: "/icons/location.png",
-    description: "Karachi,Pakistan,London,UK",
-  },
-];

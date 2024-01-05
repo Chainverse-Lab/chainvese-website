@@ -1,41 +1,9 @@
 import React from "react";
 import { Card, CardContent, CardDescription } from "./ui/card";
 import Image from "next/image";
+import { ServicesSecCardsData } from "@/constants/config-data";
 
 const ServicesSec = () => {
-  const cardsData = [
-    {
-      title: "WORKSHOPS",
-      imageSrc: "/icons/workshop.png",
-      description:
-        "Collaborate with our Web3 specialists to brainstorm and develop your product ideas.",
-    },
-    {
-      title: "UI/UX",
-      imageSrc: "/icons/ui.png",
-      description:
-        "Collaborate with our Web3 specialists to brainstorm and develop your product ideas.",
-    },
-    {
-      title: "CONSULTING",
-      imageSrc: "/icons/consulting.png",
-      description:
-        "Collaborate with our Web3 specialists to brainstorm and develop your product ideas.",
-    },
-    {
-      title: "ARCHITECTURE",
-      imageSrc: "/icons/arch.png",
-      description:
-        "Collaborate with our Web3 specialists to brainstorm and develop your product ideas.",
-    },
-    {
-      title: "DEVELOPMENT",
-      imageSrc: "/icons/dev.png",
-      description:
-        "Collaborate with our Web3 specialists to brainstorm and develop your product ideas.",
-    },
-  ];
-
   return (
     <section className="px-6 lg:px-12 py-20 flex justify-center items-center">
       <div className="flex flex-col justify-center items-center">
@@ -49,7 +17,7 @@ const ServicesSec = () => {
           covereds.
         </p>
         <div className="my-12 w-full gap-4 flex flex-wrap justify-center items-center lg:max-w-7xl">
-          {cardsData.map((card, index) => (
+          {ServicesSecCardsData.map((card, index) => (
             <Card key={index} className="xl:w-1/4 md:w-full">
               <CardContent className="pt-2 flex justify-center items-center gap-4">
                 <Image

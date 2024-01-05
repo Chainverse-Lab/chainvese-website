@@ -1,6 +1,7 @@
 import FeatureCard from "@/components/BDevFeaturedCard";
 import ServicesHero from "@/components/ServicesPages/ServicesHero";
 import { WhyUsBdPublic } from "@/components/ServicesPages/WhyUs";
+import { PublicCardsData } from "@/constants/config-data";
 
 const page = () => {
   return (
@@ -15,7 +16,7 @@ const page = () => {
           Key Features
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 my-12">
-          {cardsData.map((card, index) => (
+          {PublicCardsData.map((card, index) => (
             <FeatureCard
               key={index}
               title={card.title}
@@ -31,26 +32,3 @@ const page = () => {
 };
 
 export default page;
-
-const cardsData = [
-  {
-    title: "Decentralization",
-    description:
-      "Experience the power of a decentralized network where no single entity controls the system. Public blockchain brings true democracy to transactions.",
-  },
-  {
-    title: "Transparency",
-    description:
-      "Every transaction is visible to all participants, fostering trust and eliminating the risk of fraud. Public blockchain is the epitome of transparency in the digital age.",
-  },
-  {
-    title: "Accessibility",
-    description:
-      "Open the doors to innovation. Our public blockchain is accessible to individuals, developers, and businesses, providing a platform for the development of decentralized applications (DApps).",
-  },
-  {
-    title: "Security",
-    description:
-      "Through consensus mechanisms, our public blockchain ensures the highest level of security, making it resistant to tampering and fraud.",
-  },
-];
