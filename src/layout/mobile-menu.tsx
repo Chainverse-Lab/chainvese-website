@@ -5,10 +5,15 @@ import { MobileDropdownMenu } from "./mobile-menu-dropdown";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Link from "next/link";
 
 const socialMediaData = [
   { id: 1, icon: <FaFacebookF />, link: "https://www.facebook.com/" },
-  { id: 2, icon: <FaLinkedinIn />, link: "https://www.linkedin.com/company/chainverse-labs" },
+  {
+    id: 2,
+    icon: <FaLinkedinIn />,
+    link: "https://www.linkedin.com/company/chainverse-labs",
+  },
   { id: 3, icon: <FaXTwitter />, link: "https://twitter.com/" },
 ];
 
@@ -187,11 +192,14 @@ export default function MobileMenu() {
                   }}
                   className="list-none flex justify-center gap-x-4"
                 >
-                  {socialMediaData.map((icon, index) => (
+                  {socialMediaData.map((social, index) => (
                     <li key={index}>
-                      <div className="bg-black dark:bg-white rounded-lg w-8 h-8 dark:text-black text-white flex justify-center items-center">
-                        {icon.icon}
-                      </div>
+                      <Link
+                        href={social.link}
+                        className="bg-black dark:bg-white rounded-lg w-8 h-8 dark:text-black text-white flex justify-center items-center"
+                      >
+                        {social.icon}
+                      </Link>
                     </li>
                   ))}
                 </motion.ul>

@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-row gap-4 items-center justify-center lg:justify-between text-black dark:text-white">
               {socialMediaData.map((socialMedia) => (
-                <Link key={socialMedia.id} href={socialMedia.link}>
+                <Link target="_blank" key={socialMedia.id} href={socialMedia.link}>
                   {socialMedia.icon}
                 </Link>
               ))}
