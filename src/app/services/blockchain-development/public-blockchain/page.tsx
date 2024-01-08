@@ -9,7 +9,7 @@ const page = () => {
       <ServicesHero
         heading="Unleash the Power of Public Blockchain"
         para="At Chainverse, we believe in the transformative potential of public blockchains. Join a global network of participants where transparency, decentralization, and inclusivity reign supreme."
-        imgSrc="/hero-web.png"
+        imgSrc="/herosImgs/pubBc.png"
       />
       <section className="">
         <h1 className="lg:text-5xl md:text-5xl text-3xl  font-extrabold gradient">

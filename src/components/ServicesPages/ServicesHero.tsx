@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 type Props = {
   heading: string;
@@ -22,17 +23,17 @@ const ServicesHero = ({ heading, para, imgSrc }: Props) => {
             <p className="text-base md:text-xl ">{para}</p>
           </div>
 
-          <div className="flex gap-6">
+          <Link href="/contact" className="flex gap-6">
             <Button variant="outline">Get in Touch</Button>
-          </div>
+          </Link>
         </div>
         <div className="relative left-4 h-full max-h-[500px] w-[85%] lg:left-0 lg:w-full">
           <Image
             src={imgSrc}
             alt="Hero"
-            className="relative h-full w-full max-w-[800px]  rounded-2xl object-cover"
-            width={800}
-            height={800}
+            className="relative h-full w-full max-w-[600px] rounded-2xl"
+            width={1000}
+            height={1000}
           />
         </div>
       </div>

@@ -7,7 +7,7 @@ const page = () => {
       <ServicesHero
         heading="Transforming Blockchain Projects with AWS Cloud Services and AMB"
         para="Welcome to Chainverse, where the synergy of AWS cloud services and Amazon Managed Blockchain (AMB) propels your blockchain projects to new heights. Explore our comprehensive solutions tailored for public, private, and consortium blockchains, leveraging the power and reliability of AWS infrastructure."
-        imgSrc="/hero-web.png"
+        imgSrc="/herosImgs/amb.png"
       />
 
       <WhyUsBdAmb />

@@ -9,7 +9,7 @@ const page = () => {
       <ServicesHero
         heading="Shaping Tomorrow's Secure Solutions."
         para="At Chainverse Labs, we understand that a solid foundation is crucial for successful blockchain solutions. Our experts specialize in designing robust and scalable blockchain architectures. Whether you're exploring public or private blockchains, our tailored solutions ensure optimal performance, security, and efficiency. Trust us to architect the future of your business with blockchain technology."
-        imgSrc="/hero-web.png"
+        imgSrc="/herosImgs/bc-arc.png"
       />
       <WhyUsBc />
       {/* <TechSlider /> */}

@@ -9,7 +9,7 @@ const page = () => {
       <ServicesHero
         heading="Elevate Your Enterprise with Secure Private Blockchain Solutions"
         para="Experience the next level of efficiency and security with Chainverse  private blockchain solutions. Tailored for enterprises, our private blockchain offers unparalleled control and customization for your business processes."
-        imgSrc="/hero-web.png"
+        imgSrc="/herosImgs/private.png"
       />
       <section className="">
         <h1 className="lg:text-5xl md:text-5xl text-3xl  font-extrabold gradient">

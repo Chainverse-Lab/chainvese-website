@@ -8,7 +8,7 @@ const page = () => {
       <ServicesHero
         heading="Secure Healthcare Solutions!"
         para="In the healthcare industry, precision and security are paramount. Chainverse Labs offers blockchain solutions that enhance data integrity, streamline processes, and ensure patient confidentiality. Join us in revolutionizing healthcare by embracing decentralized technologies that bring transparency and efficiency to the forefront of medical operations."
-        imgSrc="/hero-web.png"
+        imgSrc="/herosImgs/healthcare.png"
       />
       {/* <WhyUs />
       <TechSlider /> */}

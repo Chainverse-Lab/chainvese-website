@@ -12,7 +12,7 @@ const page = () => {
               should be captivating, immersive, and unforgettable. At
               ChainVerse, we specialize in weaving digital magic through our
               bespoke Frontend Web Development Services."
-        imgSrc="/hero-web.png"
+              imgSrc="/herosImgs/front-end.png"
       />
       <WhyUsWeb />
       <TechSlider />
