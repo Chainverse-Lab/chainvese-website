@@ -6,6 +6,7 @@ import Footer from "@/layout/Footer";
 import { SiteHeader } from "@/layout/Header";
 import { Toaster } from "@/components/ui/toaster";
 import ScrollToTop from "@/layout/ScrollToTop";
+import Cursor from "@/components/Cursor";
 
 const russoOne = Russo_One({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={russoOne.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Cursor />
           <div className="relative flex min-h-screen flex-col">
             <SiteHeader />
             <div className="flex-1">{children}</div>
